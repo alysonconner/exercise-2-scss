@@ -1,0 +1,90 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: $oswald-font;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: $background;
+}
+
+.body-sunny {
+	background-color: $sun;
+}
+
+.body-cloudy {
+		background-color: $cloud;
+}
+
+.body-rainy {
+		background-color: $rain;
+}
+
+.main {
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	color: white;
+	padding: 10%;
+	padding-bottom: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 20px;
+	color: white;
+}
+
+h3 {
+	font-size: 100px;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 10%;
+	padding-bottom: 0;
+	text-transform: uppercase;
+}
+
+.icons {
+	@include icons($white, $sun);
+}
+
+.icon-cloudy {
+	@include icons($white, $cloud);
+}
+
+.icon-rainy {
+	@include icons($white, $rain);
+}
+
+.hr {
+	@include hr($white);
+}
+
+.rotate {
+	@include rotate;
+}

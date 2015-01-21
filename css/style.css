@@ -1,0 +1,140 @@
+/* This file imports all of your scss partials to be compiled into one stylesheet,
+which you can then attach to your html.
+
+All files that are prefixed with an underscore "_name-of-file.scss" are called partials - meaning their css isn't compiled unless its imported into an unprefixed .scss file */
+/* This file contains all our variables */
+/* are placeholders for storing imformation that you want to reuse throughout your styles.
+You can store things like colours, font-stacks, or any css value you think you might want to reuse
+SCSS uses the '$' symbol to declare variables */
+/* This file contains all our mixins */
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 7, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* line 17, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 21, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+html {
+  font-family: 'Oswald', sans-serif; }
+
+/* line 25, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #404041; }
+
+/* line 32, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.body-sunny {
+  background-color: #fbaf3f; }
+
+/* line 36, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.body-cloudy {
+  background-color: #00a79d; }
+
+/* line 40, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.body-rainy {
+  background-color: #500a2d; }
+
+/* line 44, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.main {
+  text-align: center; }
+
+/* line 48, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 10%;
+  padding-bottom: 0;
+  text-transform: uppercase; }
+
+/* line 57, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+h2 {
+  font-size: 20px;
+  color: white; }
+
+/* line 62, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+h3 {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10%;
+  padding-bottom: 0;
+  text-transform: uppercase; }
+
+/* line 72, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.icons {
+  color: white;
+  margin: 0;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px grey; }
+  /* line 8, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/mixins */
+  .icons:hover {
+    color: #fbaf3f; }
+
+/* line 76, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.icon-cloudy {
+  color: white;
+  margin: 0;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px grey; }
+  /* line 8, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/mixins */
+  .icon-cloudy:hover {
+    color: #00a79d; }
+
+/* line 80, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.icon-rainy {
+  color: white;
+  margin: 0;
+  font-size: 100px;
+  text-shadow: 3px 3px 3px grey; }
+  /* line 8, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/mixins */
+  .icon-rainy:hover {
+    color: #500a2d; }
+
+/* line 84, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.hr {
+  width: 200px;
+  border: 2px solid white;
+  opacity: 0.5;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+/* line 88, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/components/main */
+.rotate {
+  transition-duration: 0.8s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  overflow: hidden; }
+  /* line 34, /Users/alysonconner/Documents/GD6/webdev/week2/exercise-2-scss/scss/mixins */
+  .rotate:hover {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg); }

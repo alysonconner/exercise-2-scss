@@ -1,0 +1,22 @@
+/* This file contains all our variables */
+
+// Variables
+/* are placeholders for storing imformation that you want to reuse throughout your styles.
+You can store things like colours, font-stacks, or any css value you think you might want to reuse
+SCSS uses the '$' symbol to declare variables */
+
+$white: white;
+$sun: rgba(251,175,63,1);
+$cloud: rgba(0,167,157,1);
+$rain: rgba(80,10,45,1);
+
+$background: rgba(64,64,65,1);
+
+
+// Fonts
+
+$oswald-font: 'Oswald', sans-serif;
+
+//
+
+$h2: 20px;
